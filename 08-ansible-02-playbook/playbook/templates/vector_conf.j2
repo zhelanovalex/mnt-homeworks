@@ -1,0 +1,11 @@
+data_dir: "/var/lib/vector"
+
+sources:
+  some_logs:
+    type: "stdin"
+
+sinks:
+  some_sink:
+    type: "console"
+    inputs: 
+      - some_logs
