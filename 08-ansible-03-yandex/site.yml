@@ -1,6 +1,7 @@
 ---
 - name: Install Clickhouse
   hosts: clickhouse
+  tags: clickhouse_neto
   handlers:
     - name: Start clickhouse service
       become: true
@@ -60,6 +61,7 @@
 
 - name: Install Vector
   hosts: vector
+  tags: vector_neto
   handlers:
     - name: Start vector service
       become: true
@@ -101,6 +103,7 @@
 
 - name: Install nginx
   hosts: lighthouse
+  tags: lighthouse_neto
   handlers:
     - name: start-nginx
       become: true
