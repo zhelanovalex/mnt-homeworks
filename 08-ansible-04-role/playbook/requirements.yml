@@ -1,0 +1,5 @@
+---
+- name: clickhouse
+  src: https://github.com/zhelanovalex/Clickhouse_role
+  scm: git
+  version: main

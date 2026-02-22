@@ -1,0 +1,18 @@
+---
+- name: Install Clickhouse
+  hosts: clickhouse
+  tags: clickhouse_neto
+  roles:
+    - clickhouse
+
+- name: Install Vector
+  hosts: vector
+  tags: vector_neto
+  roles:
+    - vector
+
+- name: Install Lighthouse
+  hosts: lighthouse
+  tags: lighthouse_neto
+  roles:
+    - lighthouse
